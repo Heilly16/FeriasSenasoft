@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FeriasApplication<ferias>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.senasoft.ferias.FeriasApplication",
+            "projectName": "ferias",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
