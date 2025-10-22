@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Módulo de Boletería</title>
+  <link rel="stylesheet" href="/ferias/src/main/resources/static/css/boletas.css">
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <h1>Módulo de Boletería</h1>
+      <p class="lead">Selecciona el evento (creado en RF1), define la localidad, precio y cantidad disponible.</p>
+
+      <form id="boletoForm" onsubmit="return false;">
+        <div>
+          <label for="evento">Evento</label>
+          <select id="evento" class="input">
+            <option value="">-- Seleccione un evento --</option>
+            <option value="ev-001">Concierto: Noche de Rock (EV-001)</option>
+            <option value="ev-002">Festival Gastronómico (EV-002)</option>
+            <option value="ev-003">Carrera 10K Ciudad (EV-003)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="localidad">Localidad / Zona</label>
+          <input id="localidad" class="input" placeholder="Ej: Platino, Platea, General" />
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="precio">Valor de la boleta (COP)</label>
+            <input id="precio" type="number" min="0" step="100" class="input" placeholder="0" />
+          </div>
+          <div class="col">
+            <label for="cantidad">Cantidad disponible</label>
+            <input id="cantidad" type="number" min="0" step="1" class="input" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="agregarBtn" class="btn">Agregar localidad</button>
+          <button id="limpiarBtn" type="button" class="btn secondary">Limpiar</button>
+          <div style="margin-left:auto" class="muted">* Los cambios se almacenan cuando guardes el evento.</div>
+        </div>
+      </form>
+
+      <div
+```
