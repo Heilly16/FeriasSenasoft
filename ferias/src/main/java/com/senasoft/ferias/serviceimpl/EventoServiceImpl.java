@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class EventoServiceImpl implements EventoService {
 
+    //LLlamado al repositorio
     @Autowired
     private EventoRepository eventoRepository;
 
