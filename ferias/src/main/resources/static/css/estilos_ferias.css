@@ -1,0 +1,109 @@
+/* Paleta de colores vivos y suaves */
+:root {
+  --color-primario: #f380f5; /* un morado moderno */
+  --color-secundario: #ff79e4; /* rosado suave */
+  --color-acento: #d60691; /*  color fucsia*/
+  --color-fondo: #f8f9fc;
+  --color-texto: #333;
+  --color-blanco: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo general */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+/* Contenedor del formulario */
+.container {
+  background-color: var(--color-blanco);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px var(--sombra);
+  width: 90%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /*se agrega una pequeña transicion para que tenga mas estetica a la hora de que el usurio ingrese el debido registro*/
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /*un poco de sombra para darle estilos y que tenga mejor vista al usuario*/
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 1.5rem;
+}
+
+/* Campos del formulario */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--color-primario);
+  outline: none;
+  box-shadow: 0 0 6px var(--color-primario);
+}
+
+/* Etiquetas */
+label {
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+/* Botón */
+button {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+}
+
+/* Animación sutil al cargar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.8s ease;
+}

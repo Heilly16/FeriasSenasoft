@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prueba</title>
+    <link rel="stylesheet" href="/ferias/src/main/resources/static/css/estilos_ferias.css" />
+</head>
+<body>
+    <div class="container">
+            <form id="login-form" class="form active">
+                <h1>Registrar Eventos</h1>
+                 <input th:type="text" id="nombre_even" placeholder="Nombre Evento" required />
+                 <label for="comentario">Descripcion del evento:</label><br>
+                   <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br>
+                 <label for ="opciones">Ingrese la fecha de inicio del evento</label>
+                <input type="date" id="fecha_inicio" placeholder="Inicio del evento" required />
+                <label for ="opciones">Ingrese la fecha de fin del evento</label>
+                <input type="date" id="fecha_fin" placeholder="Inicio del evento" required />
+                <label for ="opciones">Eliga el Municipio</label>
+                <select name="opciones" id="opciones" aria-placeholder="Municipio">
+                    <option value="opcion1">Piedecuesta</option>
+                    <option value="opcion2">Giron</option>
+                    <option value="opcion3">Bucaramanga</option>
+                    <option value="opcion3">Zapatoca </option>
+                    <option value="opcion3">FloridaBlanca</option>
+                    <option value="opcion3">Guane</option>
+                    <option value="opcion3">San Gil</option>
+                </select>
+                <label for ="opciones">Ingrese la hora de inicio del evento</label>
+                <input type="time" id="hora_incio" placeholder="Hora de inicio del evento" required />
+                <label for ="opciones">Ingrese la hora fin del evento</label>
+                <input type="time" id="hora_incio" placeholder="Hora de fin del evento" required />
+                <button>Registrar</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
